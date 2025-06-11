@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rebecca's Business</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #007BFF;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #0056b3;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 0.8rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #007BFF;
+    }
+
+    .services, .testimonials, .gallery {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: white;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      flex: 1 1 250px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    @media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services, .testimonials, .gallery {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .card {
+    flex: 1 1 100%;
+  }
+}
+
+form {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #007BFF;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Rebecca's Business</h1>
+    <p>Professional Services You Can Trust</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome</h2>
+    <p>Welcome to our business site. We offer high-quality services tailored to meet your unique needs. Explore what we do and get in touch today.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are a dedicated team offering top-tier business solutions. With years of experience in the field, our mission is to provide services that help our clients succeed.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card"><h3>Web Development</h3><p>Building fast, responsive, and user-friendly websites.</p></div>
+      <div class="card"><h3>Digital Marketing</h3><p>Grow your online presence with targeted marketing strategies.</p></div>
+      <div class="card"><h3>IT Support</h3><p>Reliable technical support and maintenance solutions.</p></div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>What Clients Say</h2>
+    <div class="testimonials">
+      <div class="card"><p>"Professional and reliable service. Highly recommend!" – Jane D.</p></div>
+      <div class="card"><p>"Rebecca's team delivered beyond expectations!" – Michael K.</p></div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <div class="card"><img src="https://via.placeholder.com/250" alt="Project 1" width="100%"></div>
+      <div class="card"><img src="https://via.placeholder.com/250" alt="Project 2" width="100%"></div>
+    </div>
+  </section>
+
+  <section id="contact">
+  <h2>Contact Us</h2>
+  <form action="mailto:douglasbecca9@gmail.com" method="post" enctype="text/plain">
+    <label for="name">Your Name:</label><br />
+    <input type="text" id="name" name="name" required><br /><br />
+
+    <label for="email">Your Email:</label><br />
+    <input type="email" id="email" name="email" required><br /><br />
+
+    <label for="message">Your Message:</label><br />
+    <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+  <footer>
+    <p>&copy; 2025 Rebecca's Business. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
